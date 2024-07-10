@@ -41,7 +41,7 @@ function Home() {
             }
 
             const newtodoList=todolist.filter((item,i)=>{
-                if(i==index){
+                if(i===index){
                     return false
                 }
                 else{
