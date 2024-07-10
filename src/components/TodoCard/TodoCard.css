@@ -1,0 +1,53 @@
+.item-card{
+    padding: 15px 10px;
+    background-color: #fff;
+    margin: 10px auto;
+    color: #245b58;
+    font-size: 18px;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.category-badge{
+    position: absolute;
+    background-color: #245b58;
+    color: #fff;
+    padding: 2px 5px;
+    font-size: 15px;
+    top: 5px;
+    right: 10px;
+    border-radius: 5px;
+    width: 90px;
+    text-align: center;
+}
+.del-img{
+    height: 35px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+@keyframes delete {
+    0%{
+        transform: rotate(-25deg);
+    }
+    25%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(25deg);
+    }
+    75%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-25deg);
+    }
+}
+
+.del-img:hover{
+    height: 36px;
+    animation: delete;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
